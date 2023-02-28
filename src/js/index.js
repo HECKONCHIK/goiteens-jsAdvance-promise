@@ -13,3 +13,5 @@ fetch('https://pokeapi.co/api/v2/pokemon/100')
 
         pokemonCard.innerHTML = markup
     })
+
+    
