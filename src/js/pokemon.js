@@ -14,13 +14,17 @@ function pokemon(id) {
             const markup = pokemonCardTpl(pokemon);
 
             pokemonCard.innerHTML = markup
+            })
+    .catch(error => {
+        if (id >= 1200) {
+            alert("Упс, данного покемона не існує");
+        }
     })
 
 }
 function searchPokemon(event) {
     event.preventDefault();
     pokemon(event.currentTarget.elements.query.value)
-
 }
 
 
